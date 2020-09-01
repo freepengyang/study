@@ -1,0 +1,74 @@
+public partial class UIAuctionOperationPanel : UIBasePanel
+{
+	protected UnityEngine.GameObject mbtn_close;
+	protected UnityEngine.Transform mobj_itemPar;
+	protected UILabel mlb_name;
+	protected UnityEngine.GameObject mobj_buy;
+	protected UnityEngine.GameObject mobj_soldOut;
+	protected UnityEngine.GameObject mobj_putAway;
+	protected UIInput minput_buyNum;
+	protected UnityEngine.GameObject mbtn_add;
+	protected UnityEngine.GameObject mbtn_reduce;
+	protected UILabel mlb_buyPrice;
+	protected UnityEngine.GameObject mbtn_buy;
+	protected UnityEngine.GameObject mbtn_cancelSell;
+	protected UnityEngine.GameObject mbtn_confirmSell;
+	protected UIInput minput_sellNum;
+	protected UIInput minput_sellPrice;
+	protected UILabel mlb_sellCharge;
+	protected UILabel mlb_soldOutNum;
+	protected UILabel mlb_soldOutprice;
+	protected UnityEngine.GameObject mbtn_cancelSoldOut;
+	protected UnityEngine.GameObject mbtn_SoldOut;
+	protected UnityEngine.GameObject mbtn_sellNumAdd;
+	protected UnityEngine.GameObject mbtn_sellNumReduce;
+	protected UnityEngine.GameObject mbtn_buyAttention;
+	protected UILabel mlb_soldOutTime;
+	protected UnityEngine.GameObject mobj_bg;
+	protected UnityEngine.GameObject mobj_Show;
+	protected UnityEngine.GameObject mbtn_showAtten;
+	protected UILabel mlb_showAtten;
+	protected UILabel mlb_showtime;
+	protected UILabel mlb_SellPrice;
+	protected UISprite msp_buyCost;
+	protected UISprite msp_soldOutCost;
+	protected UISprite msp_putawayCost;
+	protected UISprite msp_putawayCharge;
+	protected override void _InitScriptBinder()
+	{
+		mbtn_close = ScriptBinder.GetObject("btn_close") as UnityEngine.GameObject;
+		mobj_itemPar = ScriptBinder.GetObject("obj_itemPar") as UnityEngine.Transform;
+		mlb_name = ScriptBinder.GetObject("lb_name") as UILabel;
+		mobj_buy = ScriptBinder.GetObject("obj_buy") as UnityEngine.GameObject;
+		mobj_soldOut = ScriptBinder.GetObject("obj_soldOut") as UnityEngine.GameObject;
+		mobj_putAway = ScriptBinder.GetObject("obj_putAway") as UnityEngine.GameObject;
+		minput_buyNum = ScriptBinder.GetObject("input_buyNum") as UIInput;
+		mbtn_add = ScriptBinder.GetObject("btn_add") as UnityEngine.GameObject;
+		mbtn_reduce = ScriptBinder.GetObject("btn_reduce") as UnityEngine.GameObject;
+		mlb_buyPrice = ScriptBinder.GetObject("lb_buyPrice") as UILabel;
+		mbtn_buy = ScriptBinder.GetObject("btn_buy") as UnityEngine.GameObject;
+		mbtn_cancelSell = ScriptBinder.GetObject("btn_cancelSell") as UnityEngine.GameObject;
+		mbtn_confirmSell = ScriptBinder.GetObject("btn_confirmSell") as UnityEngine.GameObject;
+		minput_sellNum = ScriptBinder.GetObject("input_sellNum") as UIInput;
+		minput_sellPrice = ScriptBinder.GetObject("input_sellPrice") as UIInput;
+		mlb_sellCharge = ScriptBinder.GetObject("lb_sellCharge") as UILabel;
+		mlb_soldOutNum = ScriptBinder.GetObject("lb_soldOutNum") as UILabel;
+		mlb_soldOutprice = ScriptBinder.GetObject("lb_soldOutprice") as UILabel;
+		mbtn_cancelSoldOut = ScriptBinder.GetObject("btn_cancelSoldOut") as UnityEngine.GameObject;
+		mbtn_SoldOut = ScriptBinder.GetObject("btn_SoldOut") as UnityEngine.GameObject;
+		mbtn_sellNumAdd = ScriptBinder.GetObject("btn_sellNumAdd") as UnityEngine.GameObject;
+		mbtn_sellNumReduce = ScriptBinder.GetObject("btn_sellNumReduce") as UnityEngine.GameObject;
+		mbtn_buyAttention = ScriptBinder.GetObject("btn_buyAttention") as UnityEngine.GameObject;
+		mlb_soldOutTime = ScriptBinder.GetObject("lb_soldOutTime") as UILabel;
+		mobj_bg = ScriptBinder.GetObject("obj_bg") as UnityEngine.GameObject;
+		mobj_Show = ScriptBinder.GetObject("obj_Show") as UnityEngine.GameObject;
+		mbtn_showAtten = ScriptBinder.GetObject("btn_showAtten") as UnityEngine.GameObject;
+		mlb_showAtten = ScriptBinder.GetObject("lb_showAtten") as UILabel;
+		mlb_showtime = ScriptBinder.GetObject("lb_showtime") as UILabel;
+		mlb_SellPrice = ScriptBinder.GetObject("lb_SellPrice") as UILabel;
+		msp_buyCost = ScriptBinder.GetObject("sp_buyCost") as UISprite;
+		msp_soldOutCost = ScriptBinder.GetObject("sp_soldOutCost") as UISprite;
+		msp_putawayCost = ScriptBinder.GetObject("sp_putawayCost") as UISprite;
+		msp_putawayCharge = ScriptBinder.GetObject("sp_putawayCharge") as UISprite;
+	}
+}

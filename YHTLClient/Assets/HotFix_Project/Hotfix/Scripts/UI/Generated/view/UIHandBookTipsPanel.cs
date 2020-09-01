@@ -1,0 +1,70 @@
+﻿public partial class UIHandBookTipsPanel : UIBasePanel
+{
+	protected UISprite msp_quality;
+	protected UISprite msp_icon;
+	protected UILabel mlb_name;
+	protected UnityEngine.GameObject mUpArrow;
+	protected UnityEngine.GameObject mDownArrow;
+	protected UIScrollBar mScrollBar;
+	protected UnityEngine.GameObject mButton;
+	protected UIGrid mBtnList;
+	protected UITable mgroups;
+	protected UIEventListener mBG;
+	protected UnityEngine.BoxCollider mBoxColider;
+	protected UIWidget mWidge;
+	protected UIEventListener mBtnTemp;
+	protected UILabel mlb_level;
+	protected UILabel mlb_quality;
+	protected UILabel mlb_city_name;
+	protected UILabel mlb_card_level;
+	protected UILabel mlb_camp_name;
+	protected UnityEngine.GameObject msp_setuped;
+	protected UIGridContainer mgrid_attributes;
+	protected UILabel mlb_attr;
+	protected UIGridContainer mgrid_skills;
+	protected UILabel mlb_skill;
+	protected UILabel mlb_desc;
+	protected UnityEngine.GameObject mButtonRoot;
+	protected UIScrollView mScrollView;
+	protected UIWidget mDesc;
+	protected UIWidget mDesc2;
+	protected UILabel mlb_desc2;
+	protected UITexture mtx_quality;
+	protected UISprite mView;
+	protected UILabel mlb_bind;
+	protected override void _InitScriptBinder()
+	{
+		msp_quality = ScriptBinder.GetObject("sp_quality") as UISprite;
+		msp_icon = ScriptBinder.GetObject("sp_icon") as UISprite;
+		mlb_name = ScriptBinder.GetObject("lb_name") as UILabel;
+		mUpArrow = ScriptBinder.GetObject("UpArrow") as UnityEngine.GameObject;
+		mDownArrow = ScriptBinder.GetObject("DownArrow") as UnityEngine.GameObject;
+		mScrollBar = ScriptBinder.GetObject("ScrollBar") as UIScrollBar;
+		mButton = ScriptBinder.GetObject("Button") as UnityEngine.GameObject;
+		mBtnList = ScriptBinder.GetObject("BtnList") as UIGrid;
+		mgroups = ScriptBinder.GetObject("groups") as UITable;
+		mBG = ScriptBinder.GetObject("BG") as UIEventListener;
+		mBoxColider = ScriptBinder.GetObject("BoxColider") as UnityEngine.BoxCollider;
+		mWidge = ScriptBinder.GetObject("Widge") as UIWidget;
+		mBtnTemp = ScriptBinder.GetObject("BtnTemp") as UIEventListener;
+		mlb_level = ScriptBinder.GetObject("lb_level") as UILabel;
+		mlb_quality = ScriptBinder.GetObject("lb_quality") as UILabel;
+		mlb_city_name = ScriptBinder.GetObject("lb_city_name") as UILabel;
+		mlb_card_level = ScriptBinder.GetObject("lb_card_level") as UILabel;
+		mlb_camp_name = ScriptBinder.GetObject("lb_camp_name") as UILabel;
+		msp_setuped = ScriptBinder.GetObject("sp_setuped") as UnityEngine.GameObject;
+		mgrid_attributes = ScriptBinder.GetObject("grid_attributes") as UIGridContainer;
+		mlb_attr = ScriptBinder.GetObject("lb_attr") as UILabel;
+		mgrid_skills = ScriptBinder.GetObject("grid_skills") as UIGridContainer;
+		mlb_skill = ScriptBinder.GetObject("lb_skill") as UILabel;
+		mlb_desc = ScriptBinder.GetObject("lb_desc") as UILabel;
+		mButtonRoot = ScriptBinder.GetObject("ButtonRoot") as UnityEngine.GameObject;
+		mScrollView = ScriptBinder.GetObject("ScrollView") as UIScrollView;
+		mDesc = ScriptBinder.GetObject("Desc") as UIWidget;
+		mDesc2 = ScriptBinder.GetObject("Desc2") as UIWidget;
+		mlb_desc2 = ScriptBinder.GetObject("lb_desc2") as UILabel;
+		mtx_quality = ScriptBinder.GetObject("tx_quality") as UITexture;
+		mView = ScriptBinder.GetObject("View") as UISprite;
+		mlb_bind = ScriptBinder.GetObject("lb_bind") as UILabel;
+	}
+}

@@ -1,0 +1,328 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using Google.Protobuf;
+using TABLE;
+
+public class ExtendTableLoader : TableLoader
+{
+    private static ExtendTableLoader mInstance;
+    public static ExtendTableLoader Instance
+    {
+        get
+        {
+            if (mInstance == null) mInstance = new ExtendTableLoader();
+            return mInstance;
+        }
+        set { mInstance = value; }
+    }
+    
+    public IEnumerator AddTableParser()
+    {
+        yield break;
+        //Dictionary<Type, MessageParser> dic = TableUtility.Instance.TableLoadDicHot;
+        //if (dic != null && dic.Count > 0) yield break;
+        //dic.Add(typeof(TABLE.SAFEAREACOORD), SAFEAREACOORDARRAY.Parser);
+        //yield return null;
+        //dic.Add(typeof(TABLE.DROPSHOW), DROPSHOWARRAY.Parser);
+        //dic.Add(typeof(TABLE.SUNDRY), SUNDRYARRAY.Parser);
+        //dic.Add(typeof(TABLE.PROMPTWORD), PROMPTWORDARRAY.Parser);
+        //dic.Add(typeof(TABLE.CLIENTTIPS), CLIENTTIPSARRAY.Parser);
+        //dic.Add(typeof(TABLE.MONSTERINFO), MONSTERINFOARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.GAMEMODELS), GAMEMODELSARRAY.Parser);
+        //dic.Add(typeof(TABLE.ITEM), ITEMARRAY.Parser);
+        //dic.Add(typeof(TABLE.ZHANHUNSUIT), ZHANHUNSUITARRAY.Parser);
+        //dic.Add(typeof(TABLE.DESCRIPTION), DESCRIPTIONARRAY.Parser);
+        //dic.Add(typeof(TABLE.PAODIANSHENFU), PAODIANSHENFUARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.ATTRIBUTE), ATTRIBUTEARRAY.Parser);
+        //dic.Add(typeof(TABLE.RANDOMATTR), RANDOMATTRARRAY.Parser);
+        //dic.Add(typeof(TABLE.SKILL), SKILLARRAY.Parser);
+        //dic.Add(typeof(TABLE.ITEMOPERATE), ITEMOPERATEARRAY.Parser);
+        //dic.Add(typeof(TABLE.LEVEL), LEVELARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.RANDOMATTRVALUE), RANDOMATTRVALUEARRAY.Parser);
+        //dic.Add(typeof(TABLE.XILIANCOST), XILIANCOSTARRAY.Parser);
+        //dic.Add(typeof(TABLE.CLIENTATTRIBUTE), CLIENTATTRIBUTEARRAY.Parser);
+        //dic.Add(typeof(TABLE.CHONGZHUCOST), CHONGZHUCOSTARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.GM), GMARRAY.Parser);
+        //dic.Add(typeof(TABLE.TIP), TIPARRAY.Parser);
+        //dic.Add(typeof(TABLE.INSTANCE), INSTANCEARRAY.Parser);
+        //dic.Add(typeof(TABLE.FUNCOPEN), FUNCOPENARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.SKILLDIRECTION), SKILLDIRECTIONARRAY.Parser);
+        //dic.Add(typeof(TABLE.TASKS), TASKSARRAY.Parser);
+        //dic.Add(typeof(TABLE.TASKGOAL), TASKGOALARRAY.Parser);
+        //dic.Add(typeof(TABLE.NPC), NPCARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.TIMER), TIMERARRAY.Parser);
+        //dic.Add(typeof(TABLE.ENERGYSTORAGE), ENERGYSTORAGEARRAY.Parser);
+        //dic.Add(typeof(TABLE.ENERGYEXCHANGE), ENERGYEXCHANGEARRAY.Parser);
+        //dic.Add(typeof(TABLE.LEVELSEAL), LEVELSEALARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.LEVELSEALRANK), LEVELSEALRANKARRAY.Parser);
+        //dic.Add(typeof(TABLE.MAPINFO), MAPINFOARRAY.Parser);
+        //dic.Add(typeof(TABLE.WOLONGLEVEL), WOLONGLEVELARRAY.Parser);
+        //dic.Add(typeof(TABLE.SKILLEFFECT), SKILLEFFECTARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.BUFFER), BUFFERARRAY.Parser);
+        //dic.Add(typeof(TABLE.EVENT), EVENTARRAY.Parser);
+        //dic.Add(typeof(TABLE.TASKREWARDS), TASKREWARDSARRAY.Parser);
+        //dic.Add(typeof(TABLE.SHOP), SHOPARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.EFFECT), EFFECTARRAY.Parser);
+        //dic.Add(typeof(TABLE.BUTTON), BUTTONARRAY.Parser);
+        //dic.Add(typeof(TABLE.MAIL), MAILARRAY.Parser);
+        //dic.Add(typeof(TABLE.RANKAWARDS), RANKAWARDSARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.AUDIO), AUDIOARRAY.Parser);
+        //dic.Add(typeof(TABLE.GETWAY), GETWAYARRAY.Parser);
+        //dic.Add(typeof(TABLE.HANDBOOK), HANDBOOKARRAY.Parser);
+        //dic.Add(typeof(TABLE.HANDBOOKSLOT), HANDBOOKSLOTARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.HANDBOOKSUIT), HANDBOOKSUITARRAY.Parser);
+        //dic.Add(typeof(TABLE.BOSS), BOSSARRAY.Parser);
+        //dic.Add(typeof(TABLE.BOSSDROPSHOW), BOSSDROPSHOWARRAY.Parser);
+        //dic.Add(typeof(TABLE.MDROPITEMS), MDROPITEMSARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.FASHION), FASHIONARRAY.Parser);
+        //dic.Add(typeof(TABLE.BOX), BOXARRAY.Parser);
+        //dic.Add(typeof(TABLE.PAODIAN), PAODIANARRAY.Parser);
+        //dic.Add(typeof(TABLE.LIANTI), LIANTIARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.ACTIVE), ACTIVEARRAY.Parser);
+        //dic.Add(typeof(TABLE.LEVELMAOXIANNODE), LEVELMAOXIANNODEARRAY.Parser);
+        //dic.Add(typeof(TABLE.LEVELMAOXIAN), LEVELMAOXIANARRAY.Parser);
+        //dic.Add(typeof(TABLE.WING), WINGARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.DELIVER), DELIVERARRAY.Parser);
+        //dic.Add(typeof(TABLE.HUANCAI), HUANCAIARRAY.Parser);
+        //dic.Add(typeof(TABLE.UNION), UNIONARRAY.Parser);
+        //dic.Add(typeof(TABLE.XILIANLISTSHOW), XILIANLISTSHOWARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.DILAOMONSTER), DILAOMONSTERARRAY.Parser);
+        //dic.Add(typeof(TABLE.QIANGHUA), QIANGHUAARRAY.Parser);
+        //dic.Add(typeof(TABLE.DILAOSKILL), DILAOSKILLARRAY.Parser);
+        //dic.Add(typeof(TABLE.UNIONBUFF), UNIONBUFFARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.BAOZHU), BAOZHUARRAY.Parser);
+        //dic.Add(typeof(TABLE.BAOZHUJINHUA), BAOZHUJINHUAARRAY.Parser);
+        //dic.Add(typeof(TABLE.BAOZHUSKILLLIB), BAOZHUSKILLLIBARRAY.Parser);
+        //dic.Add(typeof(TABLE.BAOZHUSKILLLIBHIGH), BAOZHUSKILLLIBHIGHARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.BAOZHUSLOT), BAOZHUSLOTARRAY.Parser);
+        //dic.Add(typeof(TABLE.MINIMAP), MINIMAPARRAY.Parser);
+        //dic.Add(typeof(TABLE.GEM), GEMARRAY.Parser);
+        //dic.Add(typeof(TABLE.GEMSLOT), GEMSLOTARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.GEMSUIT), GEMSUITARRAY.Parser);
+        //dic.Add(typeof(TABLE.SHACHENGYUANBAO), SHACHENGYUANBAOARRAY.Parser);
+        //dic.Add(typeof(TABLE.HUNLI), HUNLIARRAY.Parser);
+        //dic.Add(typeof(TABLE.ZHANCHONGXILIANCOST), ZHANCHONGXILIANCOSTARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.ZHANCHONGRANDOMATTRVALUE), ZHANCHONGRANDOMATTRVALUEARRAY.Parser);
+        //dic.Add(typeof(TABLE.ACTIVEREWARD), ACTIVEREWARDARRAY.Parser);
+        //dic.Add(typeof(TABLE.SIGNCARD), SIGNCARDARRAY.Parser);
+        //dic.Add(typeof(TABLE.SIGNCARDCOLLECTION), SIGNCARDCOLLECTIONARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.SIGNCARDHONOR), SIGNCARDHONORARRAY.Parser);
+        //dic.Add(typeof(TABLE.SHIZHENTYPE), SHIZHENTYPEARRAY.Parser);
+        //dic.Add(typeof(TABLE.SHIZHENREWARD), SHIZHENREWARDARRAY.Parser);
+        //dic.Add(typeof(TABLE.TREASURE), TREASUREARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.POINTS), POINTSARRAY.Parser);
+        //dic.Add(typeof(TABLE.SPECIALACTIVITY), SPECIALACTIVITYARRAY.Parser);
+        //dic.Add(typeof(TABLE.VIP), VIPARRAY.Parser);
+        //dic.Add(typeof(TABLE.SPECIALACTIVEREWARD), SPECIALACTIVEREWARDARRAY.Parser);
+        //dic.Add(typeof(TABLE.GUIDEGROUP), GUIDEGROUPARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.ADVENTURE), ADVENTUREARRAY.Parser);
+        //dic.Add(typeof(TABLE.ZHANCHONGJUEXING), ZHANCHONGJUEXINGARRAY.Parser);
+        //dic.Add(typeof(TABLE.MONTHCARD), MONTHCARDARRAY.Parser);
+        //dic.Add(typeof(TABLE.COMBINE), COMBINEARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.DAYCHARGE),DAYCHARGEARRAY.Parser);
+        //dic.Add(typeof(TABLE.NEWBIEACTIVITY), NEWBIEACTIVITYARRAY.Parser);
+        //dic.Add(typeof(TABLE.NEWBIEACTIVITYSCHEDULE), NEWBIEACTIVITYSCHEDULEARRAY.Parser);
+        //dic.Add(typeof(TABLE.GIFTBAG), GIFTBAGARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.BOSSCARNIVALREWARDS), BOSSCARNIVALREWARDSARRAY.Parser);
+        //dic.Add(typeof(TABLE.SCENETRIGGER), SCENETRIGGERARRAY.Parser);
+        //dic.Add(typeof(TABLE.PACK), PACKARRAY.Parser);
+        //dic.Add(typeof(TABLE.ARMSRACETASK), ARMSRACETASKARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.JIJINTASK), JIJINTASKARRAY.Parser);
+        //dic.Add(typeof(TABLE.JIJINREWARD),JIJINREWARDARRAY.Parser);
+        //dic.Add(typeof(TABLE.BOSSDROP),BOSSDROPARRAY.Parser);
+        //dic.Add(typeof(TABLE.MBOX), MBOXARRAY.Parser);
+        //yield return null; dic.Add(typeof(TABLE.RECHARGE), RECHARGEARRAY.Parser);
+        //dic.Add(typeof(TABLE.MAOXIANRANDOMGAIN), MAOXIANRANDOMGAINARRAY.Parser);
+        //dic.Add(typeof(TABLE.SPECIALEQUIP), SPECIALEQUIPARRAY.Parser);
+        //dic.Add(typeof(TABLE.INSTANCEDROPSHOW), INSTANCEDROPSHOWARRAY.Parser);
+        //yield return null;
+        //dic.Add(typeof(TABLE.ZHANCHONGRANDOMATTRNEW), ZHANCHONGRANDOMATTRNEWARRAY.Parser);
+        //dic.Add(typeof(TABLE.ZHANCHONGXILIANCOSTNEW), ZHANCHONGXILIANCOSTNEWARRAY.Parser);
+        //dic.Add(typeof(TABLE.ZHANHUNLEVEL), ZHANHUNLEVELARRAY.Parser);
+        //yield return null;
+        //dic.Add(typeof(TABLE.ZHANCHONGCIZHUIEFFECT), ZHANCHONGCIZHUIEFFECTARRAY.Parser);
+        //dic.Add(typeof(ITEMCALLBACKBASE),ITEMCALLBACKBASEARRAY.Parser);
+        //dic.Add(typeof(ITEMCALLBACK),ITEMCALLBACKARRAY.Parser);
+        //yield return null;
+        //dic.Add(typeof(CHONGWUTIANFU), CHONGWUTIANFUARRAY.Parser);
+        //dic.Add(typeof(CHONGWUHEXIN), CHONGWUHEXINARRAY.Parser);
+        //dic.Add(typeof(CHONGWUXILIANCOST), CHONGWUXILIANCOSTARRAY.Parser);
+        //yield return null;
+        //dic.Add(typeof(CHANGEMODEL), CHANGEMODELARRAY.Parser);
+		//dic.Add(typeof(BESTRONG), BESTRONGARRAY.Parser);
+	}
+
+    public override void LoadTables()
+    {
+        base.LoadTables();
+    }
+    
+    //抛出加载完成
+    public void CastLoadComplate()
+    {
+        IsStartCalculate = true;
+    }
+    
+    public IEnumerator OnLoadTable()
+    {
+        CSGame.Sington.InitTable();
+
+        //Loading页面读进度条前必须使用Table
+        AudioTableManager.Instance.OnLoad("Audio");
+        ClientTipsTableManager.Instance.OnLoad("ClientTips");
+        PromptWordTableManager.Instance.OnLoad("PromptWord");
+        yield return null; SundryTableManager.Instance.OnLoad("Sundry");
+        //Loading页面读进度条后使用Table
+        MonsterInfoTableManager.Instance.OnLoad("MonsterInfo");
+        MapInfoTableManager.Instance.OnLoad("MapInfo");
+        yield return null; GameModelsTableManager.Instance.OnLoad("GameModels");
+        yield return null; ItemTableManager.Instance.OnLoad("Item");
+        yield return null; ZhanHunSuitTableManager.Instance.OnLoad("ZhanHunSuit");
+        DescriptionTableManager.Instance.OnLoad("Description");
+        PaoDianShenFuTableManager.Instance.OnLoad("PaoDianShenFu");
+        yield return null; AttributeTableManager.Instance.OnLoad("attribute");
+        yield return null; RandomAttrValueTableManager.Instance.OnLoad("RandomAttrValue");
+        yield return null; SkillTableManager.Instance.OnLoad("Skill");
+        ItemOperateTableManager.Instance.OnLoad("ItemOperate");
+        yield return null; LevelTableManager.Instance.OnLoad("Level");
+        XiLianCostTableManager.Instance.OnLoad("XiLianCost");
+        yield return null; ClientAttributeTableManager.Instance.OnLoad("ClientAttribute");
+        ChongZhuCostTableManager.Instance.OnLoad("ChongZhuCost");
+        GMTableManager.Instance.OnLoad("GM");
+        TipTableManager.Instance.OnLoad("Tip");
+        yield return null; InstanceTableManager.Instance.OnLoad("Instance");
+        FuncOpenTableManager.Instance.OnLoad("FuncOpen");
+        //SkillDirectionTableManager.Instance.OnLoad("SkillDirection");
+        //SkillEffectTableManager.Instance.OnLoad("SkillEffect");
+        yield return null; TasksTableManager.Instance.OnLoad("Tasks");
+        TaskGoalTableManager.Instance.OnLoad("TaskGoal");
+        NpcTableManager.Instance.OnLoad("Npc");
+        TimerTableManager.Instance.OnLoad("Timer");
+        yield return null; EnergyExchangeTableManager.Instance.OnLoad("EnergyExchange");
+        EnergyStorageTableManager.Instance.OnLoad("EnergyStorage");
+        LevelSealTableManager.Instance.OnLoad("LevelSeal");
+        LevelSealRankTableManager.Instance.OnLoad("LevelSealRank");
+        yield return null; WoLongLevelTableManager.Instance.OnLoad("WoLongLevel");
+        BufferTableManager.Instance.OnLoad("Buffer");
+        EventTableManager.Instance.OnLoad("Event");
+        TaskRewardsTableManager.Instance.OnLoad("TaskRewards");
+        yield return null; ShopTableManager.Instance.OnLoad("Shop");
+        EffectTableManager.Instance.OnLoad("Effect");
+        ButtonTableManager.Instance.OnLoad("Button");
+        yield return null; MailTableManager.Instance.OnLoad("Mail");
+        yield return null; RankAwardsTableManager.Instance.OnLoad("RankAwards");
+        GetWayTableManager.Instance.OnLoad("GetWay");
+        yield return null; HandBookTableManager.Instance.OnLoad("HandBook");
+        HandBookSuitTableManager.Instance.OnLoad("HandBookSuit");
+        yield return null; HandBookSlotTableManager.Instance.OnLoad("HandBookSlot");
+        BossTableManager.Instance.OnLoad("Boss");
+        yield return null; BossDropShowTableManager.Instance.OnLoad("BossDropShow");
+        yield return null; MDropItemsTableManager.Instance.OnLoad("MDropItems");
+        yield return null; InstanceDropShowTableManager.Instance.OnLoad("InstanceDropShow");
+        FashionTableManager.Instance.OnLoad("Fashion");
+        BoxTableManager.Instance.OnLoad("Box");
+        PaoDianTableManager.Instance.OnLoad("PaoDian");
+        yield return null; LianTiTableManager.Instance.OnLoad("LianTi");
+        ActiveTableManager.Instance.OnLoad("Active");
+        LevelMaoXianNodeTableManager.Instance.OnLoad("LevelMaoXianNode");
+        LevelMaoXianTableManager.Instance.OnLoad("LevelMaoXian");
+        yield return null; WingTableManager.Instance.OnLoad("Wing");
+        DeliverTableManager.Instance.OnLoad("Deliver");
+        HuanCaiTableManager.Instance.OnLoad("HuanCai");
+        UnionTableManager.Instance.OnLoad("Union");
+        yield return null; XiLianListShowTableManager.Instance.OnLoad("XiLianListShow");
+        DiLaoMonsterTableManager.Instance.OnLoad("DiLaoMonster");
+        QianghuaTableManager.Instance.OnLoad("Qianghua");
+        DiLaoSkillTableManager.Instance.OnLoad("DiLaoSkill");
+        yield return null; UnionBuffTableManager.Instance.OnLoad("UnionBuff");
+        BaoZhuTableManager.Instance.OnLoad("BaoZhu");
+        BaoZhuJinHuaTableManager.Instance.OnLoad("BaoZhuJinHua");
+        BaoZhuSkillLibTableManager.Instance.OnLoad("BaoZhuSkillLib");
+        yield return null; BaoZhuSkillLibHighTableManager.Instance.OnLoad("BaoZhuSkillLibHigh");
+        BaoZhuSlotTableManager.Instance.OnLoad("BaoZhuSlot");
+        MiniMapTableManager.Instance.OnLoad("MiniMap");
+        GemTableManager.Instance.OnLoad("Gem");
+        yield return null; GemSlotTableManager.Instance.OnLoad("GemSlot");
+        GemSuitTableManager.Instance.OnLoad("GemSuit");
+        ShaChengYuanBaoTableManager.Instance.OnLoad("ShaChengYuanBao");
+        HunLiTableManager.Instance.OnLoad("HunLi");
+        yield return null; ZhanChongXiLianCostTableManager.Instance.OnLoad("ZhanChongXiLianCost");
+        ZhanChongRandomAttrValueTableManager.Instance.OnLoad("ZhanChongRandomAttrValue");
+        ActiveRewardTableManager.Instance.OnLoad("ActiveReward");
+        SignCardTableManager.Instance.OnLoad("SignCard");
+        yield return null; SignCardCollectionTableManager.Instance.OnLoad("SignCardCollection");
+        SignCardHonorTableManager.Instance.OnLoad("SignCardHonor");
+        ShiZhenTypeTableManager.Instance.OnLoad("ShiZhenType");
+        ShiZhenRewardTableManager.Instance.OnLoad("ShiZhenReward");
+        yield return null; TreasureTableManager.Instance.OnLoad("Treasure");
+        PointsTableManager.Instance.OnLoad("Points");
+        SpecialActivityTableManager.Instance.OnLoad("SpecialActivity");
+        VIPTableManager.Instance.OnLoad("VIP");
+        yield return null; SpecialActiveRewardTableManager.Instance.OnLoad("SpecialActiveReward");
+        GuideGroupTableManager.Instance.OnLoad("GuideGroup");
+        AdventureTableManager.Instance.OnLoad("Adventure");
+		ZhanChongJueXingTableManager.Instance.OnLoad("ZhanChongJueXing");
+        yield return null; MonthCardTableManager.Instance.OnLoad("MonthCard");
+        CombineTableManager.Instance.OnLoad("Combine");
+		DayChargeTableManager.Instance.OnLoad("DayCharge");
+        NewbieActivityTableManager.Instance.OnLoad("NewbieActivity");
+        yield return null; NewbieActivityScheduleTableManager.Instance.OnLoad("NewbieActivitySchedule");
+        GiftBagTableManager.Instance.OnLoad("GiftBag");
+		BossCarnivalRewardsTableManager.Instance.OnLoad("BossCarnivalRewards");
+        SceneTriggerTableManager.Instance.OnLoad("SceneTrigger");
+        yield return null; ArmsRaceTaskTableManager.Instance.OnLoad("ArmsRaceTask");
+        PackTableManager.Instance.OnLoad("Pack");
+        JijinTaskTableManager.Instance.OnLoad("JijinTask");
+        JijinRewardTableManager.Instance.OnLoad("JijinReward");
+        yield return null; BossDropTableManager.Instance.OnLoad("BossDrop");
+        MBoxTableManager.Instance.OnLoad("MBox");
+        RechargeTableManager.Instance.OnLoad("Recharge");
+        MaoXianRandomGainTableManager.Instance.OnLoad("MaoXianRandomGain");
+        yield return null;
+        SpecialEquipTableManager.Instance.OnLoad("SpecialEquip");
+        WoLongRandomAttrTableManager.Instance.OnLoad("WoLongRandomAttr");
+        ZhanChongXiLianCostNewTableManager.Instance.OnLoad("ZhanChongXiLianCostNew");
+        ZhanHunLevelTableManager.Instance.OnLoad("ZhanHunLevel");
+        yield return null;
+        ZhanChongCiZhuiEffectTableManager.Instance.OnLoad("ZhanChongCiZhuiEffect");
+        ItemCallBackBaseTableManager.Instance.OnLoad("ItemCallBackBase");
+        ItemCallBackTableManager.Instance.OnLoad("ItemCallBack");
+        ChongwuTianfuTableManager.Instance.OnLoad("ChongwuTianfu");
+        yield return null;
+        ChongwuHexinTableManager.Instance.OnLoad("ChongwuHexin");
+        ChongwuXilianCostTableManager.Instance.OnLoad("ChongwuXilianCost");
+        ChongwuShuxingTableManager.Instance.OnLoad("ChongwuShuxing");
+        ChangeModelTableManager.Instance.OnLoad("ChangeModel");
+		yield return null;
+        BeStrongTableManager.Instance.OnLoad("BeStrong");
+        MoneyTypeTableManager.Instance.OnLoad("MoneyType");
+        ChongwuXilianTableManager.Instance.OnLoad("ChongwuXilian");
+        ChongwuXilianShujukuTableManager.Instance.OnLoad("ChongwuXilianShujuku");
+        yield return null;
+        RechargeRewardTableManager.Instance.OnLoad("RechargeReward");
+        BiQiShopTableManager.Instance.OnLoad("BiQiShop");
+        JingjiHuodongTableManager.Instance.OnLoad("JingjiHuodong");
+        JingjiHuodongjiangliTableManager.Instance.OnLoad("JingjiHuodongjiangli");
+		yield return null;
+        MafaActivityRewardTableManager.Instance.OnLoad("MafaActivityReward");
+        MafaActivityTableManager.Instance.OnLoad("MafaActivity");
+        ChongwuHushenXilianShujukuTableManager.Instance.OnLoad("ChongwuHushenXilianShujuku");
+        ChongwuHushenXilianTableManager.Instance.OnLoad("ChongwuHushenXilian");
+        yield return null;
+        DropShowTableManager.Instance.OnLoad("DropShow");
+        WolongScoreTableManager.Instance.OnLoad("WolongScore");
+        MapBanTableManager.Instance.OnLoad("MapBan");
+        YuLingLevelTableManager.Instance.OnLoad("YuLingLevel");
+        yield return null;
+        YuLingSoulTableManager.Instance.OnLoad("YuLingSoul");
+        HuaiJiuSlotTableManager.Instance.OnLoad("HuaiJiuSlot");
+		NaYuanBaoTableManager.Instance.OnLoad("NaYuanBao");
+        SpecialActivityTipTableManager.Instance.OnLoad("SpecialActivityTip");
+		yield return null;
+        HuaiJiuSuitTableManager.Instance.OnLoad("HuaiJiuSuit");
+        ActivityButtonTableManager.Instance.OnLoad("ActivityButton");
+        ChongZhuTopCostTableManager.Instance.OnLoad("ChongZhuTopCost");
+        HejiSkillTableManager.Instance.OnLoad("HejiSkill");
+    }
+}

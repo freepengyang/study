@@ -1,0 +1,72 @@
+public partial class UIGuildBagPanel : UIBasePanel
+{
+	protected UIEventListener mbtn_donate;
+	protected UIScrollView mScrollView;
+	protected UIScrollView mScrollViewBag;
+	protected UIEventListener mbtn_combine;
+	protected UnityEngine.GameObject mGoCancelDestory;
+	protected UIEventListener mbtn_destroy;
+	protected UnityEngine.GameObject mDestroyBtnEffect;
+	protected UnityEngine.GameObject mget_settings;
+	protected UIGridContainer mget_settings_grid;
+	protected UILabel mget_settings_text;
+	protected UnityEngine.GameObject mget_settings_arrow;
+	protected UnityEngine.GameObject mGoExchangePanel;
+	protected UISprite mGet_settings_gridBg;
+	protected UnityEngine.GameObject mGoSettingPanel;
+	protected UIEventListener mBtnSetting;
+	protected UISprite mGoSettingBg;
+	protected UILabel mLabBagSetNotPresidentDesc;
+	protected UITexture mTexBg1;
+	protected UILabel mlb_num;
+	protected UILabel mlb_numbag;
+	protected UILabel mlb_gongxiandu;
+	protected UIToggle mtg_select;
+	protected UIToggle mtg_select_career;
+	protected UICenterOnChild mCenterOnBag;
+	protected UIGrid mBagLeft;
+	protected UIGrid mBagCenter;
+	protected UIGrid mBagRight;
+	protected UICenterOnChild mCenterOnWarehouse;
+	protected UIGrid mWarehouseLeft;
+	protected UIGrid mWarehouseCenter;
+	protected UIGrid mWarehouseRight;
+	protected UnityEngine.Transform mTempCenter;
+	protected UIEventListener mbtn_help;
+	protected override void _InitScriptBinder()
+	{
+		mbtn_donate = ScriptBinder.GetObject("btn_donate") as UIEventListener;
+		mScrollView = ScriptBinder.GetObject("ScrollView") as UIScrollView;
+		mScrollViewBag = ScriptBinder.GetObject("ScrollViewBag") as UIScrollView;
+		mbtn_combine = ScriptBinder.GetObject("btn_combine") as UIEventListener;
+		mGoCancelDestory = ScriptBinder.GetObject("GoCancelDestory") as UnityEngine.GameObject;
+		mbtn_destroy = ScriptBinder.GetObject("btn_destroy") as UIEventListener;
+		mDestroyBtnEffect = ScriptBinder.GetObject("DestroyBtnEffect") as UnityEngine.GameObject;
+		mget_settings = ScriptBinder.GetObject("get_settings") as UnityEngine.GameObject;
+		mget_settings_grid = ScriptBinder.GetObject("get_settings_grid") as UIGridContainer;
+		mget_settings_text = ScriptBinder.GetObject("get_settings_text") as UILabel;
+		mget_settings_arrow = ScriptBinder.GetObject("get_settings_arrow") as UnityEngine.GameObject;
+		mGoExchangePanel = ScriptBinder.GetObject("GoExchangePanel") as UnityEngine.GameObject;
+		mGet_settings_gridBg = ScriptBinder.GetObject("Get_settings_gridBg") as UISprite;
+		mGoSettingPanel = ScriptBinder.GetObject("GoSettingPanel") as UnityEngine.GameObject;
+		mBtnSetting = ScriptBinder.GetObject("BtnSetting") as UIEventListener;
+		mGoSettingBg = ScriptBinder.GetObject("GoSettingBg") as UISprite;
+		mLabBagSetNotPresidentDesc = ScriptBinder.GetObject("LabBagSetNotPresidentDesc") as UILabel;
+		mTexBg1 = ScriptBinder.GetObject("TexBg1") as UITexture;
+		mlb_num = ScriptBinder.GetObject("lb_num") as UILabel;
+		mlb_numbag = ScriptBinder.GetObject("lb_numbag") as UILabel;
+		mlb_gongxiandu = ScriptBinder.GetObject("lb_gongxiandu") as UILabel;
+		mtg_select = ScriptBinder.GetObject("tg_select") as UIToggle;
+		mtg_select_career = ScriptBinder.GetObject("tg_select_career") as UIToggle;
+		mCenterOnBag = ScriptBinder.GetObject("CenterOnBag") as UICenterOnChild;
+		mBagLeft = ScriptBinder.GetObject("BagLeft") as UIGrid;
+		mBagCenter = ScriptBinder.GetObject("BagCenter") as UIGrid;
+		mBagRight = ScriptBinder.GetObject("BagRight") as UIGrid;
+		mCenterOnWarehouse = ScriptBinder.GetObject("CenterOnWarehouse") as UICenterOnChild;
+		mWarehouseLeft = ScriptBinder.GetObject("WarehouseLeft") as UIGrid;
+		mWarehouseCenter = ScriptBinder.GetObject("WarehouseCenter") as UIGrid;
+		mWarehouseRight = ScriptBinder.GetObject("WarehouseRight") as UIGrid;
+		mTempCenter = ScriptBinder.GetObject("TempCenter") as UnityEngine.Transform;
+		mbtn_help = ScriptBinder.GetObject("btn_help") as UIEventListener;
+	}
+}

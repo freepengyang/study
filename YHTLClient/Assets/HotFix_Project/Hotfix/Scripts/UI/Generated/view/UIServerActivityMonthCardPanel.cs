@@ -1,0 +1,74 @@
+public partial class UIServerActivityMonthCardPanel : UIBasePanel
+{
+	protected UnityEngine.GameObject mtex_left;
+	protected UnityEngine.GameObject mtex_right;
+	protected UILabel mlb_timeLeft;
+	protected UILabel mlb_timeRight;
+	protected UIGridContainer mGrid_left;
+	protected UIGridContainer mGrid_right;
+	protected UnityEngine.GameObject mobj_buyLeft;
+	protected UnityEngine.GameObject mobj_receiveLeft;
+	protected UnityEngine.GameObject mobj_buyRight;
+	protected UnityEngine.GameObject mobj_receiveRight;
+	protected UIEventListener mbtn_buyLeft;
+	protected UILabel mlb_moneyLeft;
+	protected UIEventListener mbtn_buyRight;
+	protected UILabel mlb_moneyRight;
+	protected UIEventListener mbtn_getLeft;
+	protected UILabel mlb_dayLeft;
+	protected UIEventListener mbtn_getRight;
+	protected UILabel mlb_dayRight;
+	protected UnityEngine.GameObject mobj_itemL;
+	protected UnityEngine.GameObject mobj_itemR;
+	protected UnityEngine.GameObject mbtn_scrollL;
+	protected UnityEngine.GameObject mbtn_scrollR;
+	protected UnityEngine.GameObject mobj_leftDayL;
+	protected UnityEngine.GameObject mobj_leftDayR;
+	protected UIScrollView mscroll_L;
+	protected UIScrollView mscroll_R;
+	protected UnityEngine.GameObject mobj_effectBuyBtnL;
+	protected UnityEngine.GameObject mobj_effectGetBtnL;
+	protected UnityEngine.GameObject mobj_effectBuyBtnR;
+	protected UnityEngine.GameObject mobj_effectGetBtnR;
+	protected UnityEngine.GameObject mobj_cardL;
+	protected UnityEngine.GameObject mobj_cardR;
+	protected UnityEngine.GameObject mobj_receivedL;
+	protected UnityEngine.GameObject mobj_receivedR;
+	protected override void _InitScriptBinder()
+	{
+		mtex_left = ScriptBinder.GetObject("tex_left") as UnityEngine.GameObject;
+		mtex_right = ScriptBinder.GetObject("tex_right") as UnityEngine.GameObject;
+		mlb_timeLeft = ScriptBinder.GetObject("lb_timeLeft") as UILabel;
+		mlb_timeRight = ScriptBinder.GetObject("lb_timeRight") as UILabel;
+		mGrid_left = ScriptBinder.GetObject("Grid_left") as UIGridContainer;
+		mGrid_right = ScriptBinder.GetObject("Grid_right") as UIGridContainer;
+		mobj_buyLeft = ScriptBinder.GetObject("obj_buyLeft") as UnityEngine.GameObject;
+		mobj_receiveLeft = ScriptBinder.GetObject("obj_receiveLeft") as UnityEngine.GameObject;
+		mobj_buyRight = ScriptBinder.GetObject("obj_buyRight") as UnityEngine.GameObject;
+		mobj_receiveRight = ScriptBinder.GetObject("obj_receiveRight") as UnityEngine.GameObject;
+		mbtn_buyLeft = ScriptBinder.GetObject("btn_buyLeft") as UIEventListener;
+		mlb_moneyLeft = ScriptBinder.GetObject("lb_moneyLeft") as UILabel;
+		mbtn_buyRight = ScriptBinder.GetObject("btn_buyRight") as UIEventListener;
+		mlb_moneyRight = ScriptBinder.GetObject("lb_moneyRight") as UILabel;
+		mbtn_getLeft = ScriptBinder.GetObject("btn_getLeft") as UIEventListener;
+		mlb_dayLeft = ScriptBinder.GetObject("lb_dayLeft") as UILabel;
+		mbtn_getRight = ScriptBinder.GetObject("btn_getRight") as UIEventListener;
+		mlb_dayRight = ScriptBinder.GetObject("lb_dayRight") as UILabel;
+		mobj_itemL = ScriptBinder.GetObject("obj_itemL") as UnityEngine.GameObject;
+		mobj_itemR = ScriptBinder.GetObject("obj_itemR") as UnityEngine.GameObject;
+		mbtn_scrollL = ScriptBinder.GetObject("btn_scrollL") as UnityEngine.GameObject;
+		mbtn_scrollR = ScriptBinder.GetObject("btn_scrollR") as UnityEngine.GameObject;
+		mobj_leftDayL = ScriptBinder.GetObject("obj_leftDayL") as UnityEngine.GameObject;
+		mobj_leftDayR = ScriptBinder.GetObject("obj_leftDayR") as UnityEngine.GameObject;
+		mscroll_L = ScriptBinder.GetObject("scroll_L") as UIScrollView;
+		mscroll_R = ScriptBinder.GetObject("scroll_R") as UIScrollView;
+		mobj_effectBuyBtnL = ScriptBinder.GetObject("obj_effectBuyBtnL") as UnityEngine.GameObject;
+		mobj_effectGetBtnL = ScriptBinder.GetObject("obj_effectGetBtnL") as UnityEngine.GameObject;
+		mobj_effectBuyBtnR = ScriptBinder.GetObject("obj_effectBuyBtnR") as UnityEngine.GameObject;
+		mobj_effectGetBtnR = ScriptBinder.GetObject("obj_effectGetBtnR") as UnityEngine.GameObject;
+		mobj_cardL = ScriptBinder.GetObject("obj_cardL") as UnityEngine.GameObject;
+		mobj_cardR = ScriptBinder.GetObject("obj_cardR") as UnityEngine.GameObject;
+		mobj_receivedL = ScriptBinder.GetObject("obj_receivedL") as UnityEngine.GameObject;
+		mobj_receivedR = ScriptBinder.GetObject("obj_receivedR") as UnityEngine.GameObject;
+	}
+}
