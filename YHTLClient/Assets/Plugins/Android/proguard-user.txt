@@ -1,0 +1,201 @@
+﻿# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in E:\Eclipse\android-sdk-windows/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the proguardFiles
+# directive in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-dontoptimize
+-optimizationpasses 5
+-verbose
+-dontwarn
+
+# 閹稿洤鐣炬稉宥呭箵韫囩晫鏆愰棃鐐插彆閸忓崬绨遍惃鍕閹存劕鎲�
+-dontskipnonpubliclibraryclassmembers
+-keepattributes Signature
+
+# 娣囨繄鏆�閺嬫矮濡囩猾璁崇瑝鐞氼偅璐╁ǎ锟�
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+#------------------------------------------------------------------------------
+#-------------閺嬭泛瀵樺銉р柤闁插矂娼伴惃鍕カ濠ф劒绗夊ǎ閿嬬┋
+#-libraryjars ../common_lib/libs/armeabi-v7a/libgmecodec.so
+#-libraryjars ../common_lib/libs/armeabi-v7a/libgmesdk.so
+#-libraryjars ../common_lib/libs/armeabi-v7a/libsilk.so
+#-libraryjars ../common_lib/libs/armeabi-v7a/libtraeimp.so
+#
+#-libraryjars ../common_lib/libs/x86/libgmecodec.so
+#-libraryjars ../common_lib/libs/x86/libgmesdk.so
+#-libraryjars ../common_lib/libs/x86/libsilk.so
+#-libraryjars ../common_lib/libs/x86/libtraeimp.so
+#
+#-libraryjars ../common_lib/libs/arm64-v8a/libgmecodec.so
+#-libraryjars ../common_lib/libs/arm64-v8a/libgmesdk.so
+#-libraryjars ../common_lib/libs/arm64-v8a/libsilk.so
+#-libraryjars ../common_lib/libs/arm64-v8a/libtraeimp.so
+
+#-------------娑撹浼愮粙瀣櫡闂堛垻娈戠挧鍕爱娑撳秵璐╁ǎ锟�
+#-libraryjars libs/armeabi-v7a/gdbserver.so
+#-libraryjars libs/armeabi-v7a/libgmecodec.so
+#-libraryjars libs/armeabi-v7a/libgmesdk.so
+#-libraryjars libs/armeabi-v7a/libil2cpp.so
+#-libraryjars libs/armeabi-v7a/libmain.so
+#-libraryjars libs/armeabi-v7a/libsilk.so
+#-libraryjars libs/armeabi-v7a/libtraeimp.so
+#-libraryjars libs/armeabi-v7a/libunity.so
+#
+#-libraryjars libs/x86/gdbserver.so
+#-libraryjars libs/x86/libgmecodec.so
+#-libraryjars libs/x86/libgmesdk.so
+#-libraryjars libs/x86/libil2cpp.so
+#-libraryjars libs/x86/libmain.so
+#-libraryjars libs/x86/libsilk.so
+#-libraryjars libs/x86/libtraeimp.so
+#-libraryjars libs/x86/libunity.so
+#
+#-libraryjars libs/arm64-v8a/libgmecodec.so
+#-libraryjars libs/arm64-v8a/libgmesdk.so
+#-libraryjars libs/arm64-v8a/libil2cpp.so
+#-libraryjars libs/arm64-v8a/libmain.so
+#-libraryjars libs/arm64-v8a/libsilk.so
+#-libraryjars libs/arm64-v8a/libtraeimp.so
+#-libraryjars libs/arm64-v8a/libunity.so
+#
+#-------------娑撹浼愮粙瀣櫡闂堛垻娈戠挧鍕爱娑撳秵璐╁ǎ鍞�nd
+
+#--SDK閻ㄥ嫭鐏﹂崠鍛瑝鐟曚浇顫﹀ǎ閿嬬┋
+
+#--SDK閻ㄥ嫭鐏﹂崠鍛瑝鐟曚浇顫﹀ǎ閿嬬┋END
+
+
+-dontwarn okio.**
+-dontwarn java.**
+-dontwarn **
+-dontwarn okhttp3.**
+
+-dontwarn com.igexin.**
+-dontwarn com.coloros.mcssdk.**
+
+-keepattributes *Annotation*
+
+
+# 娣囨繃瀵旈崫顏冪昂缁绗夌悮顐ｈ穿濞ｏ拷
+-keep class a.** { *;}
+-keep class cn.** { *;}
+-keep class it.** { *;}
+-keep class net.** { *;}
+-keep class org.** { *;}
+-keep class bitter.** { *;}
+-keep class android.** { *;}
+-keep class de.** { *;}
+-keep class MTT.** { *;}
+
+-keep class com.** { *;}
+-keep class okhttp3.** {*;}
+-keep class okio.** {*;}
+-keep class com.yaya.sdk.** {*;}
+-keep class com.yaya.gson.** {*;}
+-keep class yaya.** {*;}
+-keep class com.yunva.**{*;}
+-keep public class java.nio.* { *; }
+
+-keep class com.alipay.** { *;}
+-keep class com.bumptech.glide.** { *;}
+-keep class com.google.gson.** { *;}
+-keep class com.heepay.plugin.** { *;}
+-keep class com.switfpass.pay.** { *;}
+-keep class com.tencent.mm.** { *;}
+-keep class com.xy.common.** { *;}
+-keep class com.ys.** { *;}
+-keep class org.** { *;}
+-keep class retrofit2.** { *;}
+-keep class rx.** { *;}
+-keep class com.bytedance.** { *;}
+-keep class com.ss.android.common.** { *;}
+
+-keep class android.support.v4.** { *;}
+-keep class android.support.annotation.** { *;}
+#oppo
+-keep class com.coloros.mcssdk.** { *; }
+
+#语音
+-dontwarn com.tencent.**
+-keep class com.tencent.** { *;}
+-keepclassmembers class com.tencent.**{*;}
+
+#common_Lib
+-keep class zt.update.ZTEngineHelper{*;}
+#------------END------------------
+
+#港澳台
+-keep class android.fragment.app.**{*;}
+-keep class com.android.**{*;}
+-keep class com.app.**{*;}
+-keep class com.kingnet.pay.**{*;}
+-keep class com.lzy.okgo.**{*;}
+-keep class com.scwang.smartrefresh.layout.**{*;}
+-keep class me.yokeyword.fragmentation.**{*;}
+-keep class com.dana.analytics.android.sdk.**{*;}
+-keep class com.alibaba.fastjson.**{*;}
+-keep class com.google.gson.**{*;}
+-keep class com.**{*;}
+-keep class me.yokeyword.**{*;}
+
+
+#九玩聚合sdk
+-keepattributes Signature
+-keepattributes *Annotation*
+#-keep public class *  {public *;}
+-keep class **.R$* {*;}
+-dontwarn java.lang.invoke.**
+-keep public class com.jiuwan.sdk.net.module.*
+-keep class com.jiuwan.sdk.net.module.* {*;}
+-keep class com.jiuwan.sdk.utils.* {*;}
+-keep class com.jiuwan.sdk.ChannelSdk {*;}
+-keep class com.jiuwan.sdk.ChannelSdkContext {*;}
+-keep class com.jiuwan.sdk.ChannelSdkListener {*;}
+-keep class com.jiuwan.sdk.SdkFunction {*;}
+-keep class com.jiuwan.sdk.callback.* {*;}
+-keep public class com.jiuwan.sdk.plugin.IPluginActivity{*;}
+-keep public class com.jiuwan.sdk.plugin.PluginProtocol{*;}
+-keep public class com.jiuwan.sdk.manager.ChannelSdkManager{*;}
+-keep public class com.jiuwan.sdk.wrapper.ChannelListenerContainer{*;}
+-keep public class com.jiuwan.sdk.log.*{*;}
+
+
+#-----
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.view.View
+
+#XY崩溃新加
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+    long producerIndex;
+    long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}

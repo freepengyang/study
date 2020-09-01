@@ -1,0 +1,72 @@
+public partial class UIWarSoulPanel : UIBasePanel
+{
+	protected UIEventListener mHelpBtn;
+	protected UnityEngine.GameObject mTexBG;
+	protected UIGridContainer mLeftGrid;
+	protected UIScrollView mLeftScrollView;
+	protected UnityEngine.GameObject mLeftDownIcon;
+	protected UILabel mPeTipstLabel;
+	protected UILabel mPetName;
+	protected UnityEngine.GameObject mAttBtn;
+	protected UnityEngine.GameObject mSkillBtn;
+	protected UnityEngine.GameObject mAttWindow;
+	protected UnityEngine.GameObject mSkillWindow;
+	protected UIGridContainer mBasicGrid;
+	protected UnityEngine.GameObject mWeaponModel;
+	protected UnityEngine.GameObject mColothModel;
+	protected UnityEngine.GameObject mNotActive;
+	protected UILabel mPetStateLabel;
+	protected UnityEngine.GameObject mLvItem;
+	protected UISlider mSliderExp;
+	protected UILabel mLvName;
+	protected UILabel mLvNum;
+	protected UIEventListener mBtnLvUp;
+	protected UIEventListener mBtnDesc;
+	protected UIScrollView mAttView;
+	protected UIScrollBar mAttScrollBar;
+	protected UnityEngine.GameObject mAttDownIcon;
+	protected UIGridContainer mActiveGrid;
+	protected UIGridContainer mPassiveGrid;
+	protected UnityEngine.GameObject mActiveTit;
+	protected UnityEngine.GameObject mPassiveTit;
+	protected CSInvoke mCSInvoke;
+	protected UnityEngine.GameObject mYesActive;
+	protected UnityEngine.GameObject mLvRedPoint;
+	protected UILabel mTalentUnlock;
+	protected override void _InitScriptBinder()
+	{
+		mHelpBtn = ScriptBinder.GetObject("HelpBtn") as UIEventListener;
+		mTexBG = ScriptBinder.GetObject("TexBG") as UnityEngine.GameObject;
+		mLeftGrid = ScriptBinder.GetObject("LeftGrid") as UIGridContainer;
+		mLeftScrollView = ScriptBinder.GetObject("LeftScrollView") as UIScrollView;
+		mLeftDownIcon = ScriptBinder.GetObject("LeftDownIcon") as UnityEngine.GameObject;
+		mPeTipstLabel = ScriptBinder.GetObject("PeTipstLabel") as UILabel;
+		mPetName = ScriptBinder.GetObject("PetName") as UILabel;
+		mAttBtn = ScriptBinder.GetObject("AttBtn") as UnityEngine.GameObject;
+		mSkillBtn = ScriptBinder.GetObject("SkillBtn") as UnityEngine.GameObject;
+		mAttWindow = ScriptBinder.GetObject("AttWindow") as UnityEngine.GameObject;
+		mSkillWindow = ScriptBinder.GetObject("SkillWindow") as UnityEngine.GameObject;
+		mBasicGrid = ScriptBinder.GetObject("BasicGrid") as UIGridContainer;
+		mWeaponModel = ScriptBinder.GetObject("WeaponModel") as UnityEngine.GameObject;
+		mColothModel = ScriptBinder.GetObject("ColothModel") as UnityEngine.GameObject;
+		mNotActive = ScriptBinder.GetObject("NotActive") as UnityEngine.GameObject;
+		mPetStateLabel = ScriptBinder.GetObject("PetStateLabel") as UILabel;
+		mLvItem = ScriptBinder.GetObject("LvItem") as UnityEngine.GameObject;
+		mSliderExp = ScriptBinder.GetObject("SliderExp") as UISlider;
+		mLvName = ScriptBinder.GetObject("LvName") as UILabel;
+		mLvNum = ScriptBinder.GetObject("LvNum") as UILabel;
+		mBtnLvUp = ScriptBinder.GetObject("BtnLvUp") as UIEventListener;
+		mBtnDesc = ScriptBinder.GetObject("BtnDesc") as UIEventListener;
+		mAttView = ScriptBinder.GetObject("AttView") as UIScrollView;
+		mAttScrollBar = ScriptBinder.GetObject("AttScrollBar") as UIScrollBar;
+		mAttDownIcon = ScriptBinder.GetObject("AttDownIcon") as UnityEngine.GameObject;
+		mActiveGrid = ScriptBinder.GetObject("ActiveGrid") as UIGridContainer;
+		mPassiveGrid = ScriptBinder.GetObject("PassiveGrid") as UIGridContainer;
+		mActiveTit = ScriptBinder.GetObject("ActiveTit") as UnityEngine.GameObject;
+		mPassiveTit = ScriptBinder.GetObject("PassiveTit") as UnityEngine.GameObject;
+		mCSInvoke = ScriptBinder.GetObject("CSInvoke") as CSInvoke;
+		mYesActive = ScriptBinder.GetObject("YesActive") as UnityEngine.GameObject;
+		mLvRedPoint = ScriptBinder.GetObject("LvRedPoint") as UnityEngine.GameObject;
+		mTalentUnlock = ScriptBinder.GetObject("TalentUnlock") as UILabel;
+	}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "UIHotResPanel",
+    "references": [
+        "Unity.ThirdParty",
+        "UIMainResPanel"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": []
+}

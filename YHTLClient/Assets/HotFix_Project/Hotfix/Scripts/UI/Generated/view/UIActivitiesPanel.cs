@@ -1,0 +1,76 @@
+﻿public partial class UIActivitiesPanel : UIBasePanel
+{
+	protected UnityEngine.GameObject mBtn_retrue;
+	protected UnityEngine.GameObject mbtn_exit;
+	protected UnityEngine.GameObject mbtn_seal_grade;
+	protected UnityEngine.GameObject mBtn_boss;
+	protected UIPlayTween mPlayTween;
+	protected UnityEngine.GameObject mbtn_activitiesCenter;
+	protected UnityEngine.GameObject mbtn_auction;
+	protected UnityEngine.GameObject mbtn_TombTreasure;
+	protected UnityEngine.GameObject mbtn_guild_fight;
+	protected UnityEngine.GameObject mbtn_seekTreasure;
+	protected UnityEngine.GameObject mbtn_openServer;
+	protected UILabel mlb_status;
+	protected UnityEngine.GameObject mbtn_RechargeFirst;
+	protected UnityEngine.GameObject mbtn_vip;
+	protected UnityEngine.GameObject mobj_openServerRed;
+	protected UnityEngine.GameObject mbtn_wildAdventure;
+	protected UnityEngine.GameObject mbtn_welfare;
+	protected UnityEngine.GameObject mbtn_SevenDay;
+	protected UnityEngine.GameObject mbtn_ArmRace;
+	protected UnityEngine.GameObject mgo_sabac_open_effect;
+	protected UnityEngine.GameObject mbtn_DailyArena;
+	protected UnityEngine.GameObject mbtn_biqiShop;
+	protected UnityEngine.GameObject mbtn_MaFa;
+	protected UnityEngine.Transform mactivityHide;
+	protected UnityEngine.GameObject mbtn_bestrong;
+	protected UnityEngine.GameObject mbtn_dream_land;
+	protected UnityEngine.Transform mpp;
+	protected UnityEngine.Transform mp1;
+	protected UnityEngine.Transform mp2;
+	protected UnityEngine.Transform mh2;
+	protected UIGrid mgh1;
+	protected UIGrid mgh2;
+	protected UIGrid mgp1;
+	protected UIGrid mgp2;
+	protected UILabel mlb_status_treasure;
+	protected override void _InitScriptBinder()
+	{
+		mBtn_retrue = ScriptBinder.GetObject("Btn_retrue") as UnityEngine.GameObject;
+		mbtn_exit = ScriptBinder.GetObject("btn_exit") as UnityEngine.GameObject;
+		mbtn_seal_grade = ScriptBinder.GetObject("btn_seal_grade") as UnityEngine.GameObject;
+		mBtn_boss = ScriptBinder.GetObject("Btn_boss") as UnityEngine.GameObject;
+		mPlayTween = ScriptBinder.GetObject("PlayTween") as UIPlayTween;
+		mbtn_activitiesCenter = ScriptBinder.GetObject("btn_activitiesCenter") as UnityEngine.GameObject;
+		mbtn_auction = ScriptBinder.GetObject("btn_auction") as UnityEngine.GameObject;
+		mbtn_TombTreasure = ScriptBinder.GetObject("btn_TombTreasure") as UnityEngine.GameObject;
+		mbtn_guild_fight = ScriptBinder.GetObject("btn_guild_fight") as UnityEngine.GameObject;
+		mbtn_seekTreasure = ScriptBinder.GetObject("btn_seekTreasure") as UnityEngine.GameObject;
+		mbtn_openServer = ScriptBinder.GetObject("btn_openServer") as UnityEngine.GameObject;
+		mlb_status = ScriptBinder.GetObject("lb_status") as UILabel;
+		mbtn_RechargeFirst = ScriptBinder.GetObject("btn_RechargeFirst") as UnityEngine.GameObject;
+		mbtn_vip = ScriptBinder.GetObject("btn_vip") as UnityEngine.GameObject;
+		mobj_openServerRed = ScriptBinder.GetObject("obj_openServerRed") as UnityEngine.GameObject;
+		mbtn_wildAdventure = ScriptBinder.GetObject("btn_wildAdventure") as UnityEngine.GameObject;
+		mbtn_welfare = ScriptBinder.GetObject("btn_welfare") as UnityEngine.GameObject;
+		mbtn_SevenDay = ScriptBinder.GetObject("btn_SevenDay") as UnityEngine.GameObject;
+		mbtn_ArmRace = ScriptBinder.GetObject("btn_ArmRace") as UnityEngine.GameObject;
+		mgo_sabac_open_effect = ScriptBinder.GetObject("go_sabac_open_effect") as UnityEngine.GameObject;
+		mbtn_DailyArena = ScriptBinder.GetObject("btn_DailyArena") as UnityEngine.GameObject;
+		mbtn_biqiShop = ScriptBinder.GetObject("btn_biqiShop") as UnityEngine.GameObject;
+		mbtn_MaFa = ScriptBinder.GetObject("btn_MaFa") as UnityEngine.GameObject;
+		mactivityHide = ScriptBinder.GetObject("activityHide") as UnityEngine.Transform;
+		mbtn_bestrong = ScriptBinder.GetObject("btn_bestrong") as UnityEngine.GameObject;
+		mbtn_dream_land = ScriptBinder.GetObject("btn_dream_land") as UnityEngine.GameObject;
+		mpp = ScriptBinder.GetObject("pp") as UnityEngine.Transform;
+		mp1 = ScriptBinder.GetObject("p1") as UnityEngine.Transform;
+		mp2 = ScriptBinder.GetObject("p2") as UnityEngine.Transform;
+		mh2 = ScriptBinder.GetObject("h2") as UnityEngine.Transform;
+		mgh1 = ScriptBinder.GetObject("gh1") as UIGrid;
+		mgh2 = ScriptBinder.GetObject("gh2") as UIGrid;
+		mgp1 = ScriptBinder.GetObject("gp1") as UIGrid;
+		mgp2 = ScriptBinder.GetObject("gp2") as UIGrid;
+		mlb_status_treasure = ScriptBinder.GetObject("lb_status_treasure") as UILabel;
+	}
+}

@@ -1,0 +1,78 @@
+﻿public partial class UIFashionPanel : UIBasePanel
+{
+	protected UIEventListener mbtn_clothes;
+	protected UIEventListener mbtn_weapon;
+	protected UIEventListener mbtn_title;
+	protected UnityEngine.GameObject mScrollView_fashion;
+	protected UnityEngine.GameObject mScrollView_weapon;
+	protected UnityEngine.GameObject mScrollView_title;
+	protected UIGridContainer mgrid_fashion;
+	protected UIGridContainer mgrid_weapon;
+	protected UIGridContainer mgrid_title;
+	protected UnityEngine.GameObject mlb_attribute;
+	protected UIGridContainer mgrid_star;
+	protected UIEventListener mbtn_rising_star;
+	protected UIEventListener mbtn_access;
+	protected UnityEngine.GameObject mtex_bg;
+	protected UnityEngine.GameObject mRole;
+	protected UIEventListener mbtn_wear;
+	protected UIEventListener mbtn_all_attribute;
+	protected UIEventListener mbtn_active;
+	protected UIGridContainer mgrid_attribute;
+	protected UIEventListener mbtn_rule;
+	protected UnityEngine.GameObject mWeapon;
+	protected UIEventListener mbtn_unload;
+	protected UILabel mlb_itemName;
+	protected UnityEngine.GameObject msp_title;
+	protected UnityEngine.GameObject mItemBase;
+	protected UIScrollView mScrollView_attr;
+	protected UILabel mlb_upAttribute;
+	protected UnityEngine.GameObject mlb_tips;
+	protected UILabel mlb_wear_hint;
+	protected UnityEngine.GameObject marrow;
+	protected UIScrollBar mbar;
+	protected UnityEngine.GameObject mredpoint_fashion;
+	protected UnityEngine.GameObject mredpoint_weapon;
+	protected UnityEngine.GameObject mredpoint_title;
+	protected UnityEngine.GameObject mredpoint_rising_star;
+	protected UIGrid mgrid_btns;
+	protected override void _InitScriptBinder()
+	{
+		mbtn_clothes = ScriptBinder.GetObject("btn_clothes") as UIEventListener;
+		mbtn_weapon = ScriptBinder.GetObject("btn_weapon") as UIEventListener;
+		mbtn_title = ScriptBinder.GetObject("btn_title") as UIEventListener;
+		mScrollView_fashion = ScriptBinder.GetObject("ScrollView_fashion") as UnityEngine.GameObject;
+		mScrollView_weapon = ScriptBinder.GetObject("ScrollView_weapon") as UnityEngine.GameObject;
+		mScrollView_title = ScriptBinder.GetObject("ScrollView_title") as UnityEngine.GameObject;
+		mgrid_fashion = ScriptBinder.GetObject("grid_fashion") as UIGridContainer;
+		mgrid_weapon = ScriptBinder.GetObject("grid_weapon") as UIGridContainer;
+		mgrid_title = ScriptBinder.GetObject("grid_title") as UIGridContainer;
+		mlb_attribute = ScriptBinder.GetObject("lb_attribute") as UnityEngine.GameObject;
+		mgrid_star = ScriptBinder.GetObject("grid_star") as UIGridContainer;
+		mbtn_rising_star = ScriptBinder.GetObject("btn_rising_star") as UIEventListener;
+		mbtn_access = ScriptBinder.GetObject("btn_access") as UIEventListener;
+		mtex_bg = ScriptBinder.GetObject("tex_bg") as UnityEngine.GameObject;
+		mRole = ScriptBinder.GetObject("Role") as UnityEngine.GameObject;
+		mbtn_wear = ScriptBinder.GetObject("btn_wear") as UIEventListener;
+		mbtn_all_attribute = ScriptBinder.GetObject("btn_all_attribute") as UIEventListener;
+		mbtn_active = ScriptBinder.GetObject("btn_active") as UIEventListener;
+		mgrid_attribute = ScriptBinder.GetObject("grid_attribute") as UIGridContainer;
+		mbtn_rule = ScriptBinder.GetObject("btn_rule") as UIEventListener;
+		mWeapon = ScriptBinder.GetObject("Weapon") as UnityEngine.GameObject;
+		mbtn_unload = ScriptBinder.GetObject("btn_unload") as UIEventListener;
+		mlb_itemName = ScriptBinder.GetObject("lb_itemName") as UILabel;
+		msp_title = ScriptBinder.GetObject("sp_title") as UnityEngine.GameObject;
+		mItemBase = ScriptBinder.GetObject("ItemBase") as UnityEngine.GameObject;
+		mScrollView_attr = ScriptBinder.GetObject("ScrollView_attr") as UIScrollView;
+		mlb_upAttribute = ScriptBinder.GetObject("lb_upAttribute") as UILabel;
+		mlb_tips = ScriptBinder.GetObject("lb_tips") as UnityEngine.GameObject;
+		mlb_wear_hint = ScriptBinder.GetObject("lb_wear_hint") as UILabel;
+		marrow = ScriptBinder.GetObject("arrow") as UnityEngine.GameObject;
+		mbar = ScriptBinder.GetObject("bar") as UIScrollBar;
+		mredpoint_fashion = ScriptBinder.GetObject("redpoint_fashion") as UnityEngine.GameObject;
+		mredpoint_weapon = ScriptBinder.GetObject("redpoint_weapon") as UnityEngine.GameObject;
+		mredpoint_title = ScriptBinder.GetObject("redpoint_title") as UnityEngine.GameObject;
+		mredpoint_rising_star = ScriptBinder.GetObject("redpoint_rising_star") as UnityEngine.GameObject;
+		mgrid_btns = ScriptBinder.GetObject("grid_btns") as UIGrid;
+	}
+}
